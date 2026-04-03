@@ -1,0 +1,87 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --text: #1e293b;
+  --primary: #0f766e;
+  --border: #dbe4ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-header,
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.layout {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.94rem;
+}
+
+input,
+button {
+  border-radius: 8px;
+  border: 1px solid #c4d2e4;
+  padding: 0.6rem;
+  font-size: 0.95rem;
+}
+
+button {
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.result {
+  line-height: 1.8;
+  font-size: 0.95rem;
+  white-space: pre-line;
+}
+
+.muted {
+  color: #64748b;
+}
+
+#notesList {
+  margin: 0.8rem 0 0;
+  padding-left: 1.1rem;
+}
